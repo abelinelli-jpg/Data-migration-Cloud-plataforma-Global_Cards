@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111" />
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .card { filter: url(#shadow); }
+      .chip { fill:#fff; stroke:#888; stroke-width:1; }
+    </style>
+  </defs>
+  <text x="800.0" y="40" font-family="Inter,Segoe UI,Arial" font-size="26" font-weight="700" text-anchor="middle" fill="#111">ETL Mainframe → AWS (Data Lake) → IBM (DB2 / MQ)</text>
+
+
+<g class="card">
+  <rect x="60" y="120" width="340" height="280" rx="12" ry="12" fill="#fffdfa" stroke="#b57f00" stroke-width="1.5"/>
+  <text x="230.0" y="150" font-family="Inter,Segoe UI,Arial" font-size="20" font-weight="600" text-anchor="middle" fill="#111">Mainframe</text>
+  <rect x="80" y="190" width="300" height="80" rx="12" ry="12" fill="#fff" stroke="#b57f00" stroke-width="1.5"/>
+  <text x="230.0" y="240" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="middle" fill="#111">Tabelas / DBs (z/OS)</text>
+  <rect x="80" y="290" width="300" height="80" rx="12" ry="12" fill="#fff" stroke="#b57f00" stroke-width="1.5"/>
+  <text x="230.0" y="340" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="middle" fill="#111">Arquivos (VSAM / Flat Files)</text>
+</g>
+
+
+<g class="card">
+  <rect x="460" y="140" width="320" height="100" rx="12" ry="12" fill="#f0fff4" stroke="#1b7f3f" stroke-width="1.5"/>
+  <text x="620.0" y="200" font-family="Inter,Segoe UI,Arial" font-size="18" font-weight="600" text-anchor="middle" fill="#111">Extração</text>
+</g>
+
+
+<g class="card">
+  <rect x="460" y="270" width="320" height="130" rx="12" ry="12" fill="#f0f7ff" stroke="#2d67c7" stroke-width="1.5"/>
+  <text x="620.0" y="320" font-family="Inter,Segoe UI,Arial" font-size="16" font-weight="600" text-anchor="middle" fill="#111">Transformação em Payloads</text>
+  <text x="620.0" y="360" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="middle" fill="#111">(JSON / Parquet)</text>
+</g>
+
+
+<g class="card">
+  <rect x="840" y="110" width="450" height="380" rx="12" ry="12" fill="#f7fbff" stroke="#0e5dd6" stroke-width="1.5"/>
+  <text x="1065.0" y="140" font-family="Inter,Segoe UI,Arial" font-size="20" font-weight="600" text-anchor="middle" fill="#111">AWS Data Lake</text>
+  <rect x="860" y="180" width="410" height="90" rx="12" ry="12" fill="#fff" stroke="#0e5dd6" stroke-width="1.5"/>
+  <text x="1065.0" y="230" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="middle" fill="#111">Amazon S3 (Zonas Bronze / Prata / Ouro)</text>
+  <rect x="860" y="280" width="410" height="90" rx="12" ry="12" fill="#fff" stroke="#0e5dd6" stroke-width="1.5"/>
+  <text x="1065.0" y="330" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="middle" fill="#111">AWS Glue (Jobs ETL / Catalog)</text>
+  <rect x="860" y="380" width="410" height="90" rx="12" ry="12" fill="#fff" stroke="#0e5dd6" stroke-width="1.5"/>
+  <text x="1065.0" y="430" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="middle" fill="#111">Amazon Athena (Consulta / Validação)</text>
+</g>
+
+
+<g class="card">
+  <rect x="840" y="520" width="720" height="230" rx="12" ry="12" fill="#f8f9ff" stroke="#2c3e9e" stroke-width="1.5"/>
+  <text x="1200.0" y="550" font-family="Inter,Segoe UI,Arial" font-size="20" font-weight="600" text-anchor="middle" fill="#111">Sistemas IBM (Destino)</text>
+  <rect x="880" y="600" width="260" height="110" rx="12" ry="12" fill="#fff" stroke="#2c3e9e" stroke-width="1.5"/>
+  <text x="1010" y="655" font-family="Inter,Segoe UI,Arial" font-size="18" font-weight="600" text-anchor="middle" fill="#111">IBM DB2</text>
+  <rect x="1260" y="600" width="260" height="110" rx="12" ry="12" fill="#fff" stroke="#2c3e9e" stroke-width="1.5"/>
+  <text x="1390" y="655" font-family="Inter,Segoe UI,Arial" font-size="18" font-weight="600" text-anchor="middle" fill="#111">IBM MQ</text>
+</g>
+
+
+<g class="card">
+  <rect x="60" y="520" width="740" height="300" rx="12" ry="12" fill="#ffffff" stroke="#999" stroke-width="1.5"/>
+  <text x="430.0" y="555" font-family="Inter,Segoe UI,Arial" font-size="18" font-weight="600" text-anchor="middle" fill="#111">Legenda e Notas</text>
+  <text x="80" y="600" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#111">• Extração: leitura de tabelas e arquivos no Mainframe.</text>
+  <text x="80" y="635" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#111">• Transformação: geração de payloads JSON/Parquet para processamento em cloud.</text>
+  <text x="80" y="670" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#111">• Data Lake AWS: S3 (armazenamento), Glue (ETL/Catálogo) e Athena (consulta/validação).</text>
+  <text x="80" y="705" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#111">• Migração: dados consistidos são enviados para IBM DB2 (persistência) e IBM MQ (mensageria).</text>
+  <text x="80" y="740" font-family="Inter,Segoe UI,Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#111">• Setas tracejadas indicam laços de validação/feedback.</text>
+</g>
+
+<line x1="400" y="240" x2="460" y="190" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="400" y="340" x2="460" y="190" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="780" y="190" x2="460" y="335" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 780 335 L 840 225" fill="none" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1065.0 325 L 1065.0 500 L 1010 655" fill="none" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1065.0 325 L 1065.0 500 L 1390 655" fill="none" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1065.0 425 L 1065.0 365" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="6,6" marker-end="url(#arrow)"/>
+</svg>
